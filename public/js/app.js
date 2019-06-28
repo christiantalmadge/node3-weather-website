@@ -16,7 +16,7 @@ weatherForm.addEventListener('submit', (e) =>
     messageTwo.textContent = ''
     //Input is added to the dynamic url to fetch data for the corresponding location
     //Kicks off asynchronous io operation
-    fetch('http://localhost:3000/weather?address='+ location).then((response) => {
+    fetch('/weather?address='+ location).then((response) => {
 
         //runs once json data has arrived
         response.json().then((data) =>
